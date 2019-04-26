@@ -1,0 +1,70 @@
+server:
+  port: 8020
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://happymix:20190415@localhost:8761/eureka
+  instance:
+    lease-expiration-duration-in-seconds: 10  #超过多少时间删除服务
+    lease-renewal-interval-in-seconds: 5    #设置心跳时长
+api:
+  map:
+    baidu:
+      url: http://api.map.baidu.com/geocoder/v2/?
+      key: 35bbf3142cb7e1197ab66475b36d651f
+spring:
+  redis:
+    database: 0
+    timeout: 10000
+    # Redis服务器地址
+    host: localhost
+    # Redis服务器连接端口
+    port: 6379
+    # Redis服务器连接密码（默认为空）
+    password: 123456
+    # 连接池最大连接数（使用负值表示没有限制）
+    pool:
+      max-active: 8
+      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: -1
+      # 连接池中的最大空闲连接
+      max-idle: 8
+      # 连接池中的最小空闲连接
+      min-idle: 0
+message:
+  accessId: youraccessId
+  accessKey: yourAccessKey
+  endpoint: a
+  topic: cn-hangzhou
+  sign: 零烦恼科技
+  verification:
+    templateCode: SMS_133965889
+    long:
+      templateCode: SMS_133960824
+  advise:
+    templateCode: SMS_133975849
+    userp:
+      templateCode: SMS_133975855
+  signup:
+    novalidate:
+      templateCode: SMS_149390443
+    notify:
+      templateCode: SMS_150576408
+verificationCode:
+  timeout:
+    time: 300
+dis:
+  verificationCode:
+    timeout:
+      time: 7200
+#zyl2019 \u77ed\u4fe1
+system:
+  sms:
+    tencent:
+      url: https://sms.jpark.vip
+      username: zhangyl
+      password: zhangyl2019
+      secrect: bec1dc8c07e0458bacc8a4c2039ebbf9
+      sign: \u96f6\u70e6\u607c\u79d1\u6280
+      template:
+        register: 3e197860-439e-42f6-941f-ad2280a171ca
