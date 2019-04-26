@@ -1,4 +1,7 @@
 evn: test
+server:
+  port: 61000
+  max-http-header-size: 10240
 eureka:
   client:
     serviceUrl:
