@@ -1,4 +1,4 @@
-
+evn: prod
 spring:
   redis:
     database: 0
