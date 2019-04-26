@@ -1,3 +1,4 @@
+evn: test
 spring:
   redis:
     database: 0
